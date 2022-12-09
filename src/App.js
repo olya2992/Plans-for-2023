@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import image from './year.jpg'
+import { Plans } from './Plans';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+    <div className="img">
+     <img className='image' src={image} alt=' pen ' width='150px' height='150px'/>
+    </div>
+    <div>
+      <h3 className='text'> What are your plans for 2023?</h3>
+    </div>
+    <Plans/>
     </div>
   );
 }
